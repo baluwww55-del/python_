@@ -31,3 +31,13 @@ b = 20
 print(a > 5 and b < 30) # it will print True because both conditions are true.
 print(a > 15 or b < 30) # it will print True because one of the conditions is true.
 print(not(a > 5)) # it will print False because a is greater than 5 and not operator negates the condition.
+
+# MEMBERSSHIP OPERATOR :
+MY_STRING = "PYTHON"
+PRINT( P IN MY_STRING )
+OUTPUT : COMES TRUE 
+
+# BITWISE OPERATOR :
+a = 1 
+b = 2 # binary representation . 
+# 8 bits = 1 byte 
