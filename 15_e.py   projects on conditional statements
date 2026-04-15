@@ -1,0 +1,23 @@
+balance = 1000
+
+print("1. Withdraw\n2. Deposit\n3. Check Balance")
+choice = int(input("Enter choice: "))
+
+if choice == 1:
+    amount = int(input("Enter amount: "))
+    if amount <= balance:
+        balance -= amount
+        print("Withdrawn:", amount)
+    else:
+        print("Insufficient balance")
+
+elif choice == 2:
+    amount = int(input("Enter amount: "))
+    balance += amount
+    print("Deposited:", amount)
+
+elif choice == 3:
+    print("Balance:", balance)
+
+else:
+    print("Invalid choice")
