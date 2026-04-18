@@ -1,6 +1,7 @@
 # login system using python :
-username = input("Enter username: ")
-password = input("Enter password: ")
+# SIMPLE LOGIN WEBPAGE USING PYTHON :
+username = input("Enter username: ")   # USERNAME AS A VARIBALE WHICH STORES THE DATE AND TIE INPUT FOR ENTERING THE  USERNAME : 
+password = (input("Enter password: ") # here password is by string not an integer if integer we use as int . 
 
 if username == "admin" and password == "1234":
     print("Access granted (Admin)")
