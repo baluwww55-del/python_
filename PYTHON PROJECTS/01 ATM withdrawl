@@ -1,15 +1,18 @@
 # atm withdrawl simulator :
-balance = 10000
-amount = int(input("Enter withdrawal amount: "))
+balance = 10000   # here we set the amount of 10000 known as balance .
+amount = int(input("Enter withdrawal amount: "))  # we used int and input for to enter the amount to withdrawl 
 
-if amount > balance:
+if amount > balance:  # using conditional statements .
     print("Insufficient funds")
-elif amount % 100 != 0:
+
+elif amount % 100 != 0:    # if condition is not true we use elif and giving another condition 
     print("Amount must be multiple of 100")
-elif amount > 5000:
+
+elif amount > 5000:      # if tht elif also not true we are using mutliple elif statements .
     print("Daily limit exceeded")
-else:
+
+else:                                 # at the last we used else statement to end the conditions .
     print("Withdrawal successful")
     print("Remaining balance:", balance - amount)
 
-#
+# this is the simple atm withdrawl project in python 
