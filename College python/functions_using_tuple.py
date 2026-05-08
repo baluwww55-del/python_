@@ -1,0 +1,7 @@
+t = (1,2,3,4,5,5,8,8,10)
+print(max(t))
+print(min(t))
+print(sum(t))
+print(len(t))
+print(t.count(5))
+print(t.index(8))

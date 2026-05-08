@@ -1,0 +1,1 @@
+python: can't open file 'C:\\CODES\\PYTHON\\program_to_construct_the_stars_pattern_using_a_nested_for_loop.py': [Errno 2] No such file or directory
