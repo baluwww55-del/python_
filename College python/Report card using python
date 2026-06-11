@@ -1,0 +1,30 @@
+name = input("Enter student name: ")
+
+m1 = int(input("Enter marks in Subject 1: "))
+m2 = int(input("Enter marks in Subject 2: "))
+m3 = int(input("Enter marks in Subject 3: "))
+m4 = int(input("Enter marks in Subject 4: "))
+m5 = int(input("Enter marks in Subject 5: "))
+
+total = m1 + m2 + m3 + m4 + m5
+percentage = total / 5
+
+print("\n----- REPORT CARD -----")
+print("Name:", name)
+print("Total Marks:", total)
+print("Percentage:", percentage)
+
+if percentage >= 90:
+    print("Grade: A+")
+elif percentage >= 80:
+    print("Grade: A")
+elif percentage >= 70:
+    print("Grade: B")
+elif percentage >= 60:
+    print("Grade: C")
+elif percentage >= 50:
+    print("Grade: D")
+else:
+    print("Grade: F")
+# this is the simple report card using python programming language using branching statements like if elif and else statements which is used to give multiple statements .
+# user just give the score of each subject and checks whether he has pass or fail and which grade he got 
