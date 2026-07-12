@@ -1,0 +1,7 @@
+rows = int(input("Enter the number of rows: "))
+
+for i in range(rows):
+    for j in range(rows):
+        print("*", end=" ")
+    print() 
+# this is the simple code of printing square pattern in python programming language .
