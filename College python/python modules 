@@ -1,0 +1,51 @@
+import math
+import random
+import datetime
+import time
+import string
+
+print("===== PYTHON MODULES DEMO =====")
+
+# Current Date and Time
+now = datetime.datetime.now()
+print("\nCurrent Date and Time:", now)
+
+# Random Number
+num = random.randint(1, 100)
+print("Random Number:", num)
+
+# Dice Roll
+dice = random.randint(1, 6)
+print("Dice Roll:", dice)
+
+# Coin Toss
+coin = random.choice(["Heads", "Tails"])
+print("Coin Toss:", coin)
+
+# OTP Generator
+otp = random.randint(1000, 9999)
+print("OTP:", otp)
+
+# Password Generator
+characters = string.ascii_letters + string.digits
+password = ""
+
+for i in range(8):
+    password += random.choice(characters)
+
+print("Random Password:", password)
+
+# Math Module
+n = float(input("\nEnter a number: "))
+print("Square Root:", math.sqrt(n))
+print("Power (Square):", math.pow(n, 2))
+print("Ceiling:", math.ceil(n))
+print("Floor:", math.floor(n))
+
+# Countdown Timer
+print("\nCountdown:")
+for i in range(5, 0, -1):
+    print(i)
+    time.sleep(1)
+
+print("Time's Up!")
