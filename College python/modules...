@@ -1,0 +1,38 @@
+import random
+import math
+import string
+from datetime import datetime
+
+print("========== PYTHON MODULES DEMO ==========")
+
+# Date and Time
+current_time = datetime.now()
+print("\nCurrent Date & Time:", current_time)
+
+# Random Number
+random_number = random.randint(1, 100)
+print("Random Number:", random_number)
+
+# Random Password
+characters = string.ascii_letters + string.digits
+password = ""
+
+for i in range(8):
+    password += random.choice(characters)
+
+print("Generated Password:", password)
+
+# Math Operations
+num = float(input("\nEnter a number: "))
+
+print("Square Root:", math.sqrt(num))
+print("Square:", math.pow(num, 2))
+print("Cube:", math.pow(num, 3))
+print("Ceiling:", math.ceil(num))
+print("Floor:", math.floor(num))
+
+# Random OTP
+otp = random.randint(1000, 9999)
+print("\nGenerated OTP:", otp)
+
+print("\nProgram Executed Successfully!")
