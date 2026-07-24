@@ -1,0 +1,10 @@
+import re
+
+text = "Python is an easy programming language."
+
+result = re.search("Python", text)
+
+if result:
+    print("Word Found")
+else:
+    print("Word Not Found")
