@@ -1,0 +1,109 @@
+def display(arr):
+    if len(arr) == 0:
+        print("Array is empty.")
+    else:
+        print("Array Elements:", arr)
+
+def insert(arr):
+    element = int(input("Enter element to insert: "))
+    arr.append(element)
+    print("Element inserted successfully.")
+
+def delete(arr):
+    element = int(input("Enter element to delete: "))
+    if element in arr:
+        arr.remove(element)
+        print("Element deleted successfully.")
+    else:
+        print("Element not found.")
+
+def search(arr):
+    element = int(input("Enter element to search: "))
+    if element in arr:
+        print("Element found at index", arr.index(element))
+    else:
+        print("Element not found.")
+
+def largest(arr):
+    if len(arr) == 0:
+        print("Array is empty.")
+    else:
+        print("Largest Element:", max(arr))
+
+def smallest(arr):
+    if len(arr) == 0:
+        print("Array is empty.")
+    else:
+        print("Smallest Element:", min(arr))
+
+def total(arr):
+    print("Sum of Elements:", sum(arr))
+
+def average(arr):
+    if len(arr) == 0:
+        print("Array is empty.")
+    else:
+        print("Average:", sum(arr) / len(arr))
+
+def sort_array(arr):
+    arr.sort()
+    print("Sorted Array:", arr)
+
+def reverse_array(arr):
+    arr.reverse()
+    print("Reversed Array:", arr)
+
+array = []
+
+while True:
+    print("\n========== ARRAY OPERATIONS ==========")
+    print("1. Insert Element")
+    print("2. Delete Element")
+    print("3. Display Array")
+    print("4. Search Element")
+    print("5. Find Largest Element")
+    print("6. Find Smallest Element")
+    print("7. Sum of Elements")
+    print("8. Average of Elements")
+    print("9. Sort Array")
+    print("10. Reverse Array")
+    print("11. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        insert(array)
+
+    elif choice == 2:
+        delete(array)
+
+    elif choice == 3:
+        display(array)
+
+    elif choice == 4:
+        search(array)
+
+    elif choice == 5:
+        largest(array)
+
+    elif choice == 6:
+        smallest(array)
+
+    elif choice == 7:
+        total(array)
+
+    elif choice == 8:
+        average(array)
+
+    elif choice == 9:
+        sort_array(array)
+
+    elif choice == 10:
+        reverse_array(array)
+
+    elif choice == 11:
+        print("Thank you!")
+        break
+
+    else:
+        print("Invalid Choice.")
