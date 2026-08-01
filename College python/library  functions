@@ -1,0 +1,9 @@
+import math
+
+num = float(input("Enter a number: "))
+
+print("Square Root:", math.sqrt(num))
+print("Power:", math.pow(num, 2))
+print("Factorial:", math.factorial(int(num)))
+print("Ceiling:", math.ceil(num))
+print("Floor:", math.floor(num))
