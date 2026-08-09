@@ -1,0 +1,40 @@
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer
+
+# Download required data
+nltk.download("punkt")
+nltk.download("punkt_tab")
+nltk.download("stopwords")
+
+text = input("Enter a sentence: ")
+
+# Tokenization
+words = word_tokenize(text)
+
+print("\nWords:")
+print(words)
+
+# Remove stopwords
+stop_words = set(stopwords.words("english"))
+
+filtered_words = []
+
+for word in words:
+    if word.lower() not in stop_words:
+        filtered_words.append(word)
+
+print("\nAfter removing stopwords:")
+print(filtered_words)
+
+# Stemming
+stemmer = PorterStemmer()
+
+stemmed_words = []
+
+for word in filtered_words:
+    stemmed_words.append(stemmer.stem(word))
+
+print("\nStemmed words:")
+print(stemmed_words)
