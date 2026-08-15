@@ -1,0 +1,37 @@
+from array import array
+
+# Create an integer array
+numbers = array('i', [10, 20, 30, 40, 50])
+
+print("Original Array:", numbers)
+
+# Add an element
+numbers.append(60)
+print("After adding 60:", numbers)
+
+# Insert an element
+numbers.insert(2, 25)
+print("After inserting 25:", numbers)
+
+# Remove an element
+numbers.remove(40)
+print("After removing 40:", numbers)
+
+# Search for an element
+search = int(input("Enter an element to search: "))
+
+if search in numbers:
+    print(search, "found at index", numbers.index(search))
+else:
+    print(search, "not found")
+
+# Find maximum and minimum
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+
+# Find sum
+print("Sum:", sum(numbers))
+
+# Reverse the array
+numbers.reverse()
+print("Reversed Array:", numbers)
