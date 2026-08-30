@@ -1,0 +1,12 @@
+a = [10, 20, 30]
+
+b = a
+
+print("a =", a)
+print("b =", b)
+
+b.append(40)
+
+print("\nAfter modifying b:")
+print("a =", a)
+print("b =", b)
