@@ -1,0 +1,22 @@
+# Python Inheritance Example
+
+# Parent class
+class Animal:
+    def eat(self):
+        print("Animal is eating")
+
+
+# Child class
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+
+# Create object of child class
+dog = Dog()
+
+# Access parent class method
+dog.eat()
+
+# Access child class method
+dog.bark()
